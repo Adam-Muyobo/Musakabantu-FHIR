@@ -59,13 +59,7 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for `uri` and `version`.
-dependencies:
-#  hl7.fhir.uv.ips: 1.1.0
-#  hl7.fhir.us.core: 3.1.0
-#  hl7.fhir.us.mcode:
-#    id: mcode
-#    uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#    version: 1.0.0
+dependencies: {}
 
 # The global property corresponds to the IG.global property, but it
 # uses the type as the YAML key and the profile as its value. Since
