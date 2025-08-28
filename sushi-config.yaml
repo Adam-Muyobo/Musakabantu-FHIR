@@ -7,11 +7,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: your.package.id
-canonical: http://your.canonical.url/fhir
-url: http://your.canonical.url/fhir/ImplementationGuide/your.package.id
-name: YourIgComputableName
-title: "Your IG Title"
+id: jit.medical.org
+canonical: http://md.jitmedical.org/fhir
+url: http://md.jitmedical.org/fhir/ImplementationGuide/jit.medical.org
+name: JITMedicalIG
+title: "Just In Time(JIT) Medical Implementation Guide"
 description: A sample FHIR Implementation Guide to create capacity among the community.
 status: active
 license: CC0-1.0
@@ -37,16 +37,16 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: Your Organization 
-  url: https://organization.url/
-  email: info@someorg.org
+  name: Just In Time 
+  url: https://jitmeds.org/
+  email: info@jitmeds.org
 
 # ContactDetail is required by the template.
 contact:
-  - name: Richard Langford
+  - name: Adam Muyobo
     telecom:
       - system: email
-        value: richard.langford@jembi.org
+        value: muyoboadam@gmail.com
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
