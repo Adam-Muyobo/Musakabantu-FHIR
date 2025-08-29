@@ -86,12 +86,11 @@ dependencies: {}
 #     better option (see below).
 # The following are simple examples to demonstrate what this might
 # look like:
-#resources:
-#  Patient/my-example-patient:
-#    name: My Example Patient
-#    description: An example Patient
-#    exampleBoolean: true
-#  Patient/bad-example: omit
+resources:
+  StructureMap/QRBreastfeedingStatusToObservation:
+    name: Map Breastfeeding Question to an Observation
+    description: Maps Questionnaire Response Resource for Breastfeeding status to an Observation Resource
+    exampleBoolean: false
 
 # Groups can control certain aspects of the IG generation.  The IG
 # documentation recommends that authors use the default groups that
