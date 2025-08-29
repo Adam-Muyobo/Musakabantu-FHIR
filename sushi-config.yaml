@@ -87,9 +87,9 @@ dependencies: {}
 # The following are simple examples to demonstrate what this might
 # look like:
 resources:
-  StructureMap/QRBreastfeedingStatusToObservation:
-    name: Map Breastfeeding Question to an Observation
-    description: Maps Questionnaire Response Resource for Breastfeeding status to an Observation Resource
+  StructureMap/JITPatientToFHIRR4Patient:
+    name: Map JIT Patient to a FHIR Patient
+    description: Maps a JIT patient to a FHIR R4 patient
     exampleBoolean: false
 
 # Groups can control certain aspects of the IG generation.  The IG
