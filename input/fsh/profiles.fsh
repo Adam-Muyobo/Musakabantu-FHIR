@@ -73,26 +73,6 @@ Description: "Represents the stock level of a specific medication at a healthcar
 * focus only Reference(Medication)
 
 //==============================
-// Local CodeSystem for Inventory types
-//==============================
-CodeSystem: InventoryLocationTypeCS
-Id: inventory-location-type-cs
-Title: "Inventory Location Type CodeSystem"
-Description: "Codes for inventory location types (pharmacy, storeroom, warehouse)."
-* #pharmacy "Pharmacy" "A pharmacy location"
-* #storeroom "Storeroom" "A storeroom location"
-* #warehouse "Warehouse" "A warehouse location"
-
-//==============================
-// ValueSet that references the CodeSystem
-//==============================
-ValueSet: InventoryLocationTypeVS
-Id: inventory-location-type-vs
-Title: "Inventory Location Type ValueSet"
-Description: "Types of inventory locations such as pharmacy, storeroom, or warehouse."
-* include codes from system http://example.org/fhir/CodeSystem/inventory-location-type-cs
-
-//==============================
 // JITAlertSubscription
 //==============================
 Profile: JITAlertSubscription
@@ -135,3 +115,14 @@ Description: "Tracks all stock queries and alerts for non-repudiation."
 * agent 1..1
 * entity 1..*
 * recorded 1..1
+
+//==============================
+// JIT Patient
+//==============================
+Profile: JITPatient
+Parent: Patient
+Id: jit-patient
+Title: "JIT Patient"
+Description: "A patient at JIT Medical"
+* maritalStatus from VSMaritalStatus (extensible)
+* extension contains MyMaritalStatusExtension  named MaritalStatus 1..
