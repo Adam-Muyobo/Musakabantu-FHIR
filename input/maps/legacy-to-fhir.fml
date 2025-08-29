@@ -1,1 +1,11 @@
-map "http://jembi.org/fhir/StructureMap/CHTPatientToFHIRR4Patient" = "CHTPatientToFHIRR4Patient"
+map "http://jembi.org/fhir/StructureMap/JITPatientToFHIRR4Patient" = "JITPatientToFHIRR4Patient"
+
+uses "http://md.jitmedical.org/fhir/StructureDefinition/JITPatientLogicalModel" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group JITPatientToFHIRR4Patient(source src : JITPatientLogicalModel, target tgt : Patient) {
+    src.name as srcName -> tgt.name as pName then {
+        srcName -> pName.text = srcName "SetPatientFullName";
+    };
+
+}
