@@ -125,3 +125,4 @@ Id: jit-patient
 Title: "JIT Patient"
 Description: "A patient at JIT Medical"
 * maritalStatus from VSMaritalStatus (extensible)
+* extension contains MyMaritalStatusExtension  named MaritalStatus 1..
