@@ -1,4 +1,4 @@
-map "http://jembi.org/fhir/StructureMap/JITPatientToFHIRR4Patient" = "JITPatientToFHIRR4Patient"
+map "http://md.jitmedical.org/fhir/StructureMap/JITPatientToFHIRR4Patient" = "JITPatientToFHIRR4Patient"
 
 uses "http://md.jitmedical.org/fhir/StructureDefinition/JITPatientLogicalModel" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
