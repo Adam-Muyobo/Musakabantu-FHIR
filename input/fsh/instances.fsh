@@ -10,11 +10,11 @@ Description: "Requirements to register a JIT Medical patient."
 * experimental = true
 * status = #active
 * name = "JITPatientLogicalModel"
-* url = "http://jit.org/fhir/StructureDefinition/JITPatientLogicalModel"
+* url = "http://md.jitmedical.org/fhir/StructureDefinition/JITPatientLogicalModel"
 * version = "0.1.0"
 * kind = #logical
 * abstract = false
-* type = "http://jit.org/fhir/StructureDefinition/JITPatientLogicalModel"
+* type = "http://md.jitmedical.org/fhir/StructureDefinition/JITPatientLogicalModel"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Base"
 * derivation = #specialization
 * fhirVersion = #4.0.1

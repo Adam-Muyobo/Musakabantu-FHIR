@@ -1,0 +1,1 @@
+map "http://jembi.org/fhir/StructureMap/CHTPatientToFHIRR4Patient" = "CHTPatientToFHIRR4Patient"
